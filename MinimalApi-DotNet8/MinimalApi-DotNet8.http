@@ -1,0 +1,38 @@
+@MinimalApi-DotNet8_HostAddress = https://localhost:7257
+
+
+GET {{MinimalApi-DotNet8_HostAddress}}/books
+
+###
+
+POST {{MinimalApi-DotNet8_HostAddress}}/books
+Content-Type: application/json
+
+{
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fiction",
+    "year": 2001
+}
+
+###
+
+GET {{MinimalApi-DotNet8_HostAddress}}/books/2
+
+###
+
+PUT {{MinimalApi-DotNet8_HostAddress}}/books/12
+Content-Type: application/json
+
+{
+    "id": 12,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fiction",
+    "year": 2010
+}
+###
+
+DELETE {{MinimalApi-DotNet8_HostAddress}}/books/12
+
+###
